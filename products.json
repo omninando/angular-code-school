@@ -1,0 +1,83 @@
+[{   
+    name: 'blau',
+    price: 2.95,
+    description: '. . .',
+    canPurchase: true,
+    soldOut: false,
+    images: [
+        'assets/images/slide1.PNG'
+    ],
+    reviews: [
+        {
+            stars: 5,
+            body: "I love this gem!",
+            author: "joe@example.org",
+            createdOn: 1397490980837
+        }, 
+        {
+            stars: 1,
+            body: "This gem sucks.",
+            author: "tim@example.org",
+            createdOn: 1397490980837
+        }
+    ]
+},
+{   
+    name: 'bleu',
+    price: 2.92,
+    description: '. . .',
+    canPurchase: true,
+    soldOut: false,
+    images: [
+        'assets/images/slide2.PNG'
+    ],
+    reviews: [
+        {
+            stars: 5,
+            body: "I love this gem!",
+            author: "joe@example.org",
+            createdOn: 1397490980837
+        }, 
+        {
+            stars: 1,
+            body: "This gem sucks.",
+            author: "tim@example.org",
+            createdOn: 1397490980837
+        }
+    ]
+},
+{   
+    name: 'bliu',
+    price: 2.91,
+    description: '. . .',
+    canPurchase: false,
+    soldOut: false,
+    images: [
+        'assets/images/slide3.PNG'
+    ],
+    reviews: [
+        {
+            stars: 5,
+            body: "I love this gem!",
+            author: "joe@example.org",
+            createdOn: 1397490980837
+        }, 
+        {
+            stars: 1,
+            body: "This gem sucks.",
+            author: "tim@example.org",
+            createdOn: 1397490980837
+        }
+    ]
+
+},
+{   
+    name: 'blou',
+    price: 2.91,
+    description: '. . .',
+    canPurchase: false,
+    soldOut: true,
+    images: [
+        'assets/images/slide4.PNG'
+    ]
+}]

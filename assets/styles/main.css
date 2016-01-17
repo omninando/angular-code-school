@@ -1,0 +1,38 @@
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.img-wrap{
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	height: 100px;
+	width: auto;
+}
+
+.nav.nav-pills {
+	display: flex;
+	justify-content: center;
+	margin: 5% auto;
+}
+
+.list-group-item {
+	margin: 0 5%;
+}
+
+li{
+	list-style: none;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: red;
+}
+
+.ng-valid.ng-dirty {
+	border-color: green;
+}
