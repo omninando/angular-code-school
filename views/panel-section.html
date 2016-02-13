@@ -1,0 +1,37 @@
+<section>
+    <ul class="nav nav-pills">
+        <li ng-class="{ active: panel.isSelected(1) }" >
+            <a href ng-click="panel.selectTab(1)" >Description</a>
+        </li>
+        <li ng-class="{ active: panel.isSelected(2) }">
+            <a href ng-click="panel.selectTab(2)" >Especification</a>
+        </li>
+        <li ng-class="{ active: panel.isSelected(3) }">
+            <a href ng-click="panel.selectTab(3)" >Reviews</a>
+        </li>
+    </ul>
+    <div class="panel" ng-show="panel.isSelected(1)">
+        <h4>Description</h4>
+        <blockquote>
+            <p>{{ product.description }}</p>
+        </blockquote>
+    </div>
+    <div class="panel" ng-show="panel.isSelected(2)">
+        <h4>Especification</h4>
+        <blockquote>
+            <p>Not Yet</p>
+        </blockquote>
+    </div>
+    <div class="panel" ng-show="panel.isSelected(3)">
+        <h4>Reviews</h4>
+        <li ng-repeat="review in product.reviews">
+            <blockquote>
+                <strong>{{review.stars}} Stars</strong>
+                {{review.body}}
+                <cite class="clearfix">—{{review.author}} on {{review.createdOn | date:"dd/mm/yyyy"}}</cite> 
+            </blockquote>
+        </li>
+        <!--  Review Form -->
+        <review-form></review-form>
+    </div>
+</section>
