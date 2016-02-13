@@ -13,7 +13,7 @@
 	app.controller('StoreController', ['$http', function($http) {
 		var store = this;
 		store.products = [];
-		$http.get('file:///Users/fernandocoelho/Downloads/angular-code-school/products.json').success(function(data) {
+		$http.get('/products.json').success(function(data) {
 			store.products = data;
 		});
 	}]);
